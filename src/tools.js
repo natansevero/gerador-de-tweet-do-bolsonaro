@@ -1,4 +1,4 @@
-import moment from 'moment'
+import dayjs from 'dayjs'
 
 const getNumbers = () => {
     const number = Math.floor(Math.random() * (Math.random() * 1000000 ) + 1 )
@@ -7,7 +7,7 @@ const getNumbers = () => {
 }
 
 const getDate = () => {
-    return moment().format('HH:mm - DD MMM YYYY')
+    return dayjs().format('HH:mm - DD MMM YYYY')
 }
 
 export { 
